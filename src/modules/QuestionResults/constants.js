@@ -1,0 +1,2 @@
+export const ADD_RESULTS = 'ADD_RESULTS';
+export const CLEAR_RESULTS = 'CLEAR_RESULTS';
