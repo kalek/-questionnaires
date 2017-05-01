@@ -1,9 +1,12 @@
 @import "../../styles/constants.sass"
+@import "../../styles/mixins.sass"
 
 .results
     &__list
         li
             padding: 15px
+            +mobile
+                padding: 10px
             &:nth-child(even)
                 background: $grey-light
     &__answer

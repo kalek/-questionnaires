@@ -1,4 +1,5 @@
 @import '../../styles/constants.sass';
+@import "../../styles/mixins.sass"
 
 .add-question
     display: flex
@@ -9,6 +10,10 @@
         box-sizing: border-box
         width: 100%
         outline: none
+        +mobile
+            padding: 5px
+            font-size: 1rem
+            margin-bottom: 10px
     &__icon
         background: $blue
         width: 47px
@@ -18,3 +23,8 @@
         font-size: 2.5rem
         color: $white
         cursor: pointer
+        +mobile
+            width: 32px
+            height: 32px
+            line-height: 1.75rem
+            font-size: 1.75rem

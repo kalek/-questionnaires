@@ -1,4 +1,5 @@
 @import "../../styles/constants.sass"
+@import "../../styles/mixins.sass"
 
 .questionnaire
     .content
@@ -8,6 +9,9 @@
             padding-bottom: 15px
             margin-bottom: 15px
             border-bottom: 1px solid $grey
+            +mobile
+                padding-bottom: 10px
+                margin-bottom: 10px
     &__answer
         margin-top: 10px
         font-size: 1rem
@@ -15,14 +19,20 @@
         box-sizing: border-box
         width: 100%
         outline: none
+        +mobile
+            font-size: .85rem
     &__email
         margin: 10px 0 20px 0
+        +mobile
+            margin: 10px 0
         input
             font-size: 1rem
             padding: 5px
             box-sizing: border-box
             width: 100%
             outline: none
+            +mobile
+                font-size: .85rem
     &__buttons
         text-align: left
         display: flex

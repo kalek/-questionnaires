@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './Question.css';
+
 const Question = ({question}) => (
-    <div>{question.get('text')} ?</div>
+    <div className="question-text">{question.get('text')} ?</div>
 );
 
 Question.propTypes = {

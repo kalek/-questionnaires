@@ -2,9 +2,9 @@ import {List, Map} from 'immutable';
 import {ADD_QUESTION, CLEAR_QUESTIONS} from './constants';
 
 const init = List([
-  Map({id: 0, text: 'What is your favourite book'}),
-  Map({id: 1, text: 'What kind of books, do you like'}),
-  Map({id: 3, text: 'What is your favourite author'}),
+  Map({text: 'What is your favourite book'}),
+  Map({text: 'What kind of books, do you like'}),
+  Map({text: 'What is your favourite author'}),
 ]);
 
 export default function(state = init, action) {

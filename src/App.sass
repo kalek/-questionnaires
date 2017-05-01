@@ -1,4 +1,5 @@
-@import "./styles/constants.sass";
+@import "./styles/constants.sass"
+@import "./styles/mixins.sass"
 
 .header
     font-size: 1.5rem
@@ -8,6 +9,9 @@
     color: $white
     padding: 15px 0
     text-align: center
+    +mobile
+        font-size: 1rem
+        padding: 10px 5px
 
 .primary-button
     border: 1px solid $green
